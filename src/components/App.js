@@ -1,19 +1,16 @@
 
-import React, {useState} from "react";
+import React from "react";
 import './../styles/App.css';
+import { Button } from "/Button";
+
+
 
 
 const App = () => {
-  const [ct, setCt] = useState(0);
-  function increase(){
-    setCt(ct+1);
-
-  }
-  return (
+    return (
     <div>
         {/* Do not remove the main div */}
-    <p>Button clicked {ct} times</p>
-    <button onClick={increase}>Increase</button>
+    <Button/>
     
     </div>
   )
